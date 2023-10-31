@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- <script>
+      axios
+        .get("https://www.zerocho.com/api/get")
+        .then((res) => {
+          console.log(res);
+          console.log(JSON.stringify(res.data));
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    </script>
+    <script>
+      const hello = async () => {
+        const res = await axios.get("https://www.zerocho.com/api/get");
+        console.log("hello" + JSON.stringify(res.data));
+      };
+      hello();
+    </script> -->
+    <script>
+      const hello2 = async () => {
+        const res = await axios.post("https://www.zerocho.com/api/post/json", {
+          name: "myoungin",
+          birth: 1997,
+        });
+        console.log("hello" + JSON.stringify(res.data));
+      };
+      hello2();
+    </script>
+  </body>
+</html>
